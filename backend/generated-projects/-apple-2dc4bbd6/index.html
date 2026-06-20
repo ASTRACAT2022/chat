@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обзор техники Apple</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: #007bff 3px solid;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        section h2 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product-item {
+            background: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .product-item h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .product-item p {
+            font-size: 0.9rem;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 20px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Добро пожаловать в мир Apple</h1>
+        <p>Обзор инновационных продуктов и технологий</p>
+    </header>
+
+    <div class="container">
+        <section id="intro">
+            <h2>О компании Apple</h2>
+            <p>Apple Inc. — американская транснациональная корпорация, специализирующаяся на разработке и продаже потребительской электроники, программного обеспечения и онлайн-сервисов. Известна своими культовыми продуктами, такими как iPhone, Mac, iPad и Apple Watch, которые изменили мир технологий.</p>
+            <p>Компания стремится к созданию продуктов, которые интуитивно понятны, мощны и красивы, сочетая передовые технологии с элегантным дизайном.</p>
+        </section>
+
+        <section id="products">
+            <h2>Популярные продукты</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/250x150?text=iPhone" alt="iPhone">
+                    <h3>iPhone</h3>
+                    <p>Революционный смартфон, изменивший представление о мобильных устройствах. Сочетание мощного процессора, потрясающей камеры и интуитивно понятного интерфейса.</p>
+                    <a href="#">Узнать больше</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/250x150?text=MacBook" alt="MacBook">
+                    <h3>MacBook</h3>
+                    <p>Мощные и стильные ноутбуки для работы и творчества. Высокая производительность, превосходные дисплеи и операционная система macOS.</p>
+                    <a href="#">Узнать больше</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/250x150?text=iPad" alt="iPad">
+                    <h3>iPad</h3>
+                    <p>Универсальные планшеты, идеально подходящие для развлечений, обучения и работы. Великолепный экран и широкий выбор приложений.</p>
+                    <a href="#">Узнать больше</a>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/250x150?text=Apple+Watch" alt="Apple Watch">
+                    <h3>Apple Watch</h3>
+                    <p>Умные часы, которые помогают следить за здоровьем, оставаться на связи и управлять повседневными задачами прямо с запястья.</p>
+                    <a href="#">Узнать больше</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="ecosystem">
+            <h2>Экосистема Apple</h2>
+            <p>Одним из ключевых преимуществ техники Apple является бесшовная интеграция всех устройств и сервисов. iPhone, iPad, Mac, Apple Watch и AirPods работают вместе, обеспечивая непрерывный пользовательский опыт. Функции, такие как Handoff, AirDrop и iCloud, позволяют легко переключаться между устройствами и синхронизировать данные.</p>
+            <p>Сервисы, такие как Apple Music, Apple TV+, iCloud Drive и App Store, дополняют аппаратные возможности, создавая полноценную цифровую среду.</p>
+        </section>
+
+        <section id="innovation">
+            <h2>Инновации и будущее</h2>
+            <p>Apple постоянно инвестирует в исследования и разработки, стремясь создавать технологии будущего. От процессоров собственной разработки до прорывных достижений в области дополненной реальности и искусственного интеллекта, компания остается на переднем крае технологического прогресса.</p>
+            <p>Будущее Apple обещает еще более умные, персонализированные и интегрированные устройства, которые продолжат упрощать жизнь пользователей и открывать новые возможности.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Обзор техники Apple. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>

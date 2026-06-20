@@ -1,0 +1,262 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppleTechOverview - Project Overview</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/apple-logo.png" alt="Apple Logo" class="logo">
+            <h1>AppleTechOverview</h1>
+            <p class="subtitle">A comprehensive overview of Apple's groundbreaking technology.</p>
+        </header>
+
+        <main>
+            <h2>Project Summary</h2>
+            <p>
+                This project, "AppleTechOverview," is a curated collection of information detailing various Apple product lines. It aims to provide a clear and accessible overview of the iPhone, iPad, Mac, and Apple Watch, highlighting their key features, innovations, and impact. Each section is designed to be informative and visually engaging, offering a glimpse into the world of Apple's design philosophy and technological advancements.
+            </p>
+
+            <h2>Project Files</h2>
+            <ul class="file-list">
+                <li>
+                    <a href="index.html" class="file-link">
+                        <span class="icon">📄</span>
+                        <span class="filename">index.html</span>
+                        <span class="description">Main project overview page.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="css/style.css" class="file-link">
+                        <span class="icon">🎨</span>
+                        <span class="filename">css/style.css</span>
+                        <span class="description">Styling for the project (Dark Theme).</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="js/script.js" class="file-link">
+                        <span class="icon">💻</span>
+                        <span class="filename">js/script.js</span>
+                        <span class="description">JavaScript for potential interactive elements.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="iphone.html" class="file-link">
+                        <span class="icon">📱</span>
+                        <span class="filename">iphone.html</span>
+                        <span class="description">Detailed information about iPhones.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ipad.html" class="file-link">
+                        <span class="icon"> "</span>
+                        <span class="filename">ipad.html</span>
+                        <span class="description">Detailed information about iPads.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mac.html" class="file-link">
+                        <span class="icon">🖥️</span>
+                        <span class="filename">mac.html</span>
+                        <span class="description">Detailed information about Macs.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="watch.html" class="file-link">
+                        <span class="icon">⌚</span>
+                        <span class="filename">watch.html</span>
+                        <span class="description">Detailed information about Apple Watches.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="images/apple-logo.png" class="file-link">
+                        <span class="icon">🖼️</span>
+                        <span class="filename">images/apple-logo.png</span>
+                        <span class="description">Project logo image.</span>
+                    </a>
+                </li>
+            </ul>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 AppleTechOverview. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+```
+
+```css
+/* css/style.css */
+:root {
+    --background-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --accent-color: #007aff;
+    --card-background: #2b2b2b;
+    --border-color: #444;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--card-background);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #aaa;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--accent-color);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #ccc;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.file-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.file-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 1px solid var(--border-color);
+    text-align: left;
+}
+
+.file-link:hover {
+    background-color: var(--card-background);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+}
+
+.icon {
+    font-size: 1.8em;
+    margin-right: 15px;
+    color: var(--accent-color);
+}
+
+.filename {
+    font-weight: bold;
+    font-size: 1.1em;
+    flex-grow: 1;
+    color: #fff;
+}
+
+.description {
+    font-size: 0.9em;
+    color: #aaa;
+    font-style: italic;
+    margin-left: 15px;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .file-link {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
+
+    .filename, .description {
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+```
+
+```javascript
+// js/script.js
+// This file is currently empty but can be used for future interactivity.
+// For example, you could add:
+// - Smooth scrolling for navigation
+// - Image carousels for product galleries
+// - Interactive feature highlighting
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('AppleTechOverview project loaded successfully!');
+    // Add any JavaScript enhancements here
+});
+```
