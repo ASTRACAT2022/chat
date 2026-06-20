@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   db:
     image: postgres:16-alpine
@@ -22,7 +20,7 @@ services:
     build: .
     restart: unless-stopped
     ports:
-      - "3000:3000"
+      - "${PORT:-3000}:3000"
     environment:
       DATABASE_URL: postgresql://astrachat:astrachat_secret@db:5432/astrachat
       JWT_SECRET: ${JWT_SECRET:-change_me_in_production}
