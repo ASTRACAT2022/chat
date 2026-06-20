@@ -24,6 +24,7 @@ COPY --from=backend /app/backend/dist ./dist
 COPY --from=backend /app/backend/node_modules ./node_modules
 COPY --from=backend /app/backend/package.json ./
 COPY --from=backend /app/backend/prisma ./prisma
+RUN npx prisma generate
 COPY --from=frontend /app/frontend/dist ./public
 
 EXPOSE 3000

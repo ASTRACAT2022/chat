@@ -19,17 +19,23 @@ services:
   app:
     build: .
     restart: unless-stopped
-    ports:
-      - "${PORT:-3000}:3000"
     environment:
       DATABASE_URL: postgresql://astrachat:astrachat_secret@db:5432/astrachat
       JWT_SECRET: ${JWT_SECRET:-change_me_in_production}
       OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+      FRONTEND_URL: ${FRONTEND_URL:-http://localhost:3000}
       NODE_ENV: production
       PORT: 3000
     depends_on:
       db:
         condition: service_healthy
+    networks:
+      - default
+      - astracat-protect
+
+networks:
+  astracat-protect:
+    external: true
 
 volumes:
   pgdata:
