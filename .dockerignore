@@ -1,0 +1,10 @@
+node_modules
+.git
+.env
+*.md
+.DS_Store
+dist
+backend/generated-projects
+frontend/src
+frontend/public
+frontend/node_modules
